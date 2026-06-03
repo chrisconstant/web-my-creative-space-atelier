@@ -18,7 +18,7 @@ export const Route = createFileRoute("/")({
 });
 
 const projects = [
-  { img: living.url, name: "Appartement Haussmann", place: "Hamburg" },
+  { img: living.url, name: "Wohnhaus Apartment", place: "Hamburg" },
   { img: kitchen.url, name: "Cuisine Noire", place: "Blankenese" },
   { img: library.url, name: "Salon Bibliothèque", place: "Hamburg" },
   { img: bedroom.url, name: "Chambre Bronze", place: "Blankenese" },
