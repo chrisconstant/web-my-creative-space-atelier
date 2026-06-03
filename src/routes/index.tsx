@@ -87,6 +87,7 @@ function Index() {
           <div className="col-span-12 md:col-span-3 md:col-start-3">
             <p className="text-foreground/50 mb-2">Studio</p>
             <p>Blankenese, Hamburg</p>
+            <p>Limassol, Cyprus</p>
           </div>
           <div className="col-span-12 md:col-span-3 mt-8 md:mt-0">
             <p className="text-foreground/50 mb-2">Contact</p>
@@ -97,7 +98,7 @@ function Index() {
 
       <footer className="px-6 md:px-10 py-8 text-xs text-foreground/50 flex justify-between">
         <span>© Atelier Blank</span>
-        <span>Blankenese — Hamburg</span>
+        <span>Blankenese — Hamburg — Limassol</span>
       </footer>
     </div>
   );
