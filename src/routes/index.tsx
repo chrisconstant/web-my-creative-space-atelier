@@ -32,7 +32,7 @@ function Index() {
     <div className="min-h-screen bg-background text-foreground font-serif">
       <header className="fixed top-0 left-0 right-0 z-50 flex items-start justify-between px-6 md:px-10 py-6">
         <a href="/" className="text-base md:text-lg tracking-tight font-medium">
-          Atelier Norden
+          Atelier Blank
         </a>
         <nav className="flex gap-6 md:gap-10 text-sm tracking-tight">
           <a href="#projects" className="hover:opacity-60 transition-opacity">Projects</a>
