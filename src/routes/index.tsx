@@ -105,7 +105,7 @@ function Index() {
 
       <footer className="px-6 md:px-10 py-8 text-xs text-foreground/50 flex justify-between">
         <span>© Atelier Blank</span>
-        <span>Stockholm</span>
+        <span>Hamburg — Limassol</span>
       </footer>
     </div>
   );
