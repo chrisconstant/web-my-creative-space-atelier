@@ -96,10 +96,6 @@ function Index() {
             <p className="text-foreground/50 mb-2">Contact</p>
             <p>studio@atelierblank.com<br />+46 8 000 00 00</p>
           </div>
-          <div className="col-span-12 md:col-span-3 mt-8 md:mt-0">
-            <p className="text-foreground/50 mb-2">Follow</p>
-            <p>Instagram<br />Journal</p>
-          </div>
         </section>
       </main>
 
