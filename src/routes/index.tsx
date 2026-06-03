@@ -1,10 +1,9 @@
 import { createFileRoute } from "@tanstack/react-router";
-import p1 from "@/assets/project-1.jpg";
-import p2 from "@/assets/project-2.jpg";
-import p3 from "@/assets/project-3.jpg";
-import p4 from "@/assets/project-4.jpg";
-import p5 from "@/assets/project-5.jpg";
-import p6 from "@/assets/project-6.jpg";
+import kitchen from "@/assets/kitchen.png.asset.json";
+import bedroom from "@/assets/bedroom.png.asset.json";
+import living from "@/assets/living.png.asset.json";
+import library from "@/assets/library.png.asset.json";
+import lamp from "@/assets/lamp.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -19,12 +18,11 @@ export const Route = createFileRoute("/")({
 });
 
 const projects = [
-  { img: p1, name: "Maison Cèdre", place: "Paris", size: "large" },
-  { img: p2, name: "Orris & Vetiver", place: "Milano", size: "small" },
-  { img: p3, name: "Studio Hélène", place: "Antwerp", size: "small" },
-  { img: p4, name: "Sartoria Lindgren", place: "Stockholm, Östermalm", size: "large" },
-  { img: p5, name: "Atelier des Sens", place: "Berlin, Mitte", size: "small" },
-  { img: p6, name: "Villa Solveig", place: "Gotland", size: "small" },
+  { img: living.url, name: "Appartement Haussmann", place: "Paris" },
+  { img: kitchen.url, name: "Cuisine Noire", place: "Hamburg" },
+  { img: library.url, name: "Salon Bibliothèque", place: "Paris" },
+  { img: bedroom.url, name: "Chambre Bronze", place: "Limassol" },
+  { img: lamp.url, name: "Étude Lumière", place: "Blankenese" },
 ];
 
 function Index() {
@@ -51,8 +49,7 @@ function Index() {
               "col-span-12 md:col-span-4 md:col-start-9 md:mt-48",
               "col-span-12 md:col-span-5 md:col-start-2",
               "col-span-12 md:col-span-6 md:col-start-7",
-              "col-span-12 md:col-span-4 md:col-start-2 md:mt-24",
-              "col-span-12 md:col-span-5 md:col-start-8",
+              "col-span-12 md:col-span-4 md:col-start-3 md:mt-24",
             ];
             return (
               <figure key={p.name} className={layouts[i]}>
