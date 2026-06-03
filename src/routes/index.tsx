@@ -9,9 +9,9 @@ import p6 from "@/assets/project-6.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Atelier Norden — Interior Architecture" },
-      { name: "description", content: "Atelier Norden is an interior architecture studio designing retail, residential and hospitality spaces worldwide." },
-      { property: "og:title", content: "Atelier Norden — Interior Architecture" },
+      { title: "Atelier Blank — Interior Architecture" },
+      { name: "description", content: "Atelier Blank is an interior architecture studio designing retail, residential and hospitality spaces worldwide." },
+      { property: "og:title", content: "Atelier Blank — Interior Architecture" },
       { property: "og:description", content: "Interior architecture studio designing retail, residential and hospitality spaces worldwide." },
     ],
   }),
