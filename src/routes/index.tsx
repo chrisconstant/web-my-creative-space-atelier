@@ -42,7 +42,7 @@ function Index() {
       </header>
 
       <main className="pt-28 md:pt-32 px-6 md:px-10 pb-32">
-        <h1 className="sr-only">Atelier Norden — Interior Architecture Studio</h1>
+        <h1 className="sr-only">Atelier Blank — Interior Architecture Studio</h1>
 
         <section id="projects" className="grid grid-cols-12 gap-x-6 md:gap-x-10 gap-y-24 md:gap-y-40">
           {projects.map((p, i) => {
