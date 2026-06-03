@@ -18,11 +18,11 @@ export const Route = createFileRoute("/")({
 });
 
 const projects = [
-  { img: living.url, name: "Appartement Haussmann", place: "Paris" },
-  { img: kitchen.url, name: "Cuisine Noire", place: "Hamburg" },
-  { img: library.url, name: "Salon Bibliothèque", place: "Paris" },
-  { img: bedroom.url, name: "Chambre Bronze", place: "Limassol" },
-  { img: lamp.url, name: "Étude Lumière", place: "Blankenese" },
+  { img: living.url, name: "Appartement Haussmann", place: "Hamburg" },
+  { img: kitchen.url, name: "Cuisine Noire", place: "Blankenese" },
+  { img: library.url, name: "Salon Bibliothèque", place: "Hamburg" },
+  { img: bedroom.url, name: "Chambre Bronze", place: "Blankenese" },
+  { img: lamp.url, name: "Étude Lumière", place: "Hamburg" },
 ];
 
 function Index() {
@@ -87,7 +87,6 @@ function Index() {
           <div className="col-span-12 md:col-span-3 md:col-start-3">
             <p className="text-foreground/50 mb-2">Studio</p>
             <p>Blankenese, Hamburg</p>
-            <p>Limassol, Cyprus</p>
           </div>
           <div className="col-span-12 md:col-span-3 mt-8 md:mt-0">
             <p className="text-foreground/50 mb-2">Contact</p>
@@ -98,7 +97,7 @@ function Index() {
 
       <footer className="px-6 md:px-10 py-8 text-xs text-foreground/50 flex justify-between">
         <span>© Atelier Blank</span>
-        <span>Hamburg — Limassol</span>
+        <span>Blankenese — Hamburg</span>
       </footer>
     </div>
   );
