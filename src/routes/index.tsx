@@ -89,7 +89,8 @@ function Index() {
         <section id="contact" className="mt-40 md:mt-56 grid grid-cols-12 gap-x-6 md:gap-x-10 text-sm">
           <div className="col-span-12 md:col-span-3 md:col-start-3">
             <p className="text-foreground/50 mb-2">Studio</p>
-            <p>Birger Jarlsgatan 22<br />114 34 Stockholm</p>
+            <p>Blankenese, Hamburg</p>
+            <p>Limassol, Cyprus</p>
           </div>
           <div className="col-span-12 md:col-span-3 mt-8 md:mt-0">
             <p className="text-foreground/50 mb-2">Contact</p>
