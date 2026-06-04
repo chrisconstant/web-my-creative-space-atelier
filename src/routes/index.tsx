@@ -76,10 +76,13 @@ function Index() {
 
         <section id="studio" className="mt-48 md:mt-64 grid grid-cols-12 gap-x-6 md:gap-x-10">
           <p className="col-span-12 md:col-span-7 md:col-start-3 text-2xl md:text-4xl leading-snug tracking-tight text-balance">
-            Atelier Blank is an interior architecture studio founded in 2011.
-            We design retail, residential and hospitality interiors with a quiet,
-            material-led sensibility — favouring stone, oak, linen and the slow
-            passage of light.
+            We are redefining spaces. Exceptional spaces begin with the art of good design. We create bespoke interiors that elevate individuality.
+          </p>
+          <p className="col-span-12 md:col-span-7 md:col-start-3 text-2xl md:text-4xl leading-snug tracking-tight text-balance mt-8">
+            Atelier Blank is an interior architecture studio founded in 2011. We design retail, residential and hospitality interiors with a quiet, material-led sensibility — favouring stone, oak, linen and the slow passage of light.
+          </p>
+          <p className="col-span-12 md:col-span-7 md:col-start-3 text-2xl md:text-4xl leading-snug tracking-tight text-balance mt-8">
+            From tailor made concept to holistic planning, from hospitality, to a single room to an office space.
           </p>
         </section>
 
