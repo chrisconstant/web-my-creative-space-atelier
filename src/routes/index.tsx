@@ -14,9 +14,17 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "Atelier Blank — Interior Architecture" },
-      { name: "description", content: "Atelier Blank is an interior architecture studio designing retail, residential and hospitality spaces worldwide." },
+      {
+        name: "description",
+        content:
+          "Atelier Blank is an interior architecture studio designing retail, residential and hospitality spaces worldwide.",
+      },
       { property: "og:title", content: "Atelier Blank — Interior Architecture" },
-      { property: "og:description", content: "Interior architecture studio designing retail, residential and hospitality spaces worldwide." },
+      {
+        property: "og:description",
+        content:
+          "Interior architecture studio designing retail, residential and hospitality spaces worldwide.",
+      },
     ],
   }),
   component: Index,
@@ -46,9 +54,15 @@ function Index() {
           Atelier Blank
         </a>
         <nav className="flex gap-6 md:gap-10 text-sm tracking-tight">
-          <a href="#projects" className="hover:opacity-60 transition-opacity">Projects</a>
-          <a href="#studio" className="hover:opacity-60 transition-opacity">Studio</a>
-          <a href="#contact" className="hover:opacity-60 transition-opacity">Contact</a>
+          <a href="#projects" className="hover:opacity-60 transition-opacity">
+            Projects
+          </a>
+          <a href="#studio" className="hover:opacity-60 transition-opacity">
+            Studio
+          </a>
+          <a href="#contact" className="hover:opacity-60 transition-opacity">
+            Contact
+          </a>
         </nav>
       </header>
 
@@ -109,14 +123,19 @@ function Index() {
 
         <section id="studio" className="mt-48 md:mt-64 grid grid-cols-12 gap-x-6 md:gap-x-10">
           <p className="col-span-12 md:col-span-7 md:col-start-3 text-2xl md:text-4xl leading-snug tracking-tight text-balance">
-            We are redefining spaces. Exceptional spaces begin with the art of good design. We create bespoke interiors that elevate individuality.
+            We are redefining spaces. Exceptional spaces begin with the art of good design. We
+            create bespoke interiors that elevate individuality.
           </p>
           <p className="col-span-12 md:col-span-7 md:col-start-3 text-2xl md:text-4xl leading-snug tracking-tight text-balance mt-8">
-            From tailor made concept to holistic planning, from hospitality, to a single room to an office space.
+            From tailor made concept to holistic planning, from hospitality, to a single room to an
+            office space.
           </p>
         </section>
 
-        <section id="contact" className="mt-40 md:mt-56 grid grid-cols-12 gap-x-6 md:gap-x-10 text-sm">
+        <section
+          id="contact"
+          className="mt-40 md:mt-56 grid grid-cols-12 gap-x-6 md:gap-x-10 text-sm"
+        >
           <div className="col-span-12 md:col-span-3 md:col-start-3">
             <p className="text-foreground/50 mb-2">Studio</p>
             <p>Blankenese, Hamburg</p>
@@ -124,7 +143,11 @@ function Index() {
           </div>
           <div className="col-span-12 md:col-span-3 mt-8 md:mt-0">
             <p className="text-foreground/50 mb-2">Contact</p>
-            <p>studio@atelierblank.com<br />+46 8 000 00 00</p>
+            <p>
+              studio@atelierblank.com
+              <br />
+              +46 8 000 00 00
+            </p>
           </div>
         </section>
       </main>
