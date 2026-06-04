@@ -4,6 +4,11 @@ import bedroom from "@/assets/bedroom.png.asset.json";
 import living from "@/assets/living.png.asset.json";
 import library from "@/assets/library.png.asset.json";
 import lamp from "@/assets/lamp.png.asset.json";
+import websiteAd from "@/assets/Website_ad.png.asset.json";
+import websiteConcept from "@/assets/website.png.asset.json";
+import conceptWindow from "@/assets/ChatGPT_Image_May_29_2026_10_22_47_AM.png.asset.json";
+import conceptCafe from "@/assets/ChatGPT_Image_May_29_2026_09_42_19_AM.png.asset.json";
+import conceptCounter from "@/assets/ChatGPT_Image_May_29_2026_11_35_26_AM.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -25,6 +30,14 @@ const projects = [
   { img: lamp.url, name: "Étude Lumière", place: "Hamburg" },
 ];
 
+const visionaryConcepts = [
+  { img: websiteAd.url, alt: "Warm-toned interior showroom with sculptural staircase" },
+  { img: websiteConcept.url, alt: "Minimal café interior with curved stone counter" },
+  { img: conceptWindow.url, alt: "Street-facing café window framed in dark stone" },
+  { img: conceptCafe.url, alt: "Softly lit café interior with wood shelving and pendant lights" },
+  { img: conceptCounter.url, alt: "Refined café counter with illuminated ribbed detailing" },
+];
+
 function Index() {
   return (
     <div className="min-h-screen bg-background text-foreground font-serif">
@@ -42,36 +55,56 @@ function Index() {
       <main className="pt-28 md:pt-32 px-6 md:px-10 pb-32">
         <h1 className="sr-only">Atelier Blank — Interior Architecture Studio</h1>
 
-        <section id="projects" className="grid grid-cols-12 gap-x-6 md:gap-x-10 gap-y-24 md:gap-y-40">
-          {projects.map((p, i) => {
-            const layouts = [
-              "col-span-12 md:col-span-7 md:col-start-1",
-              "col-span-12 md:col-span-4 md:col-start-9 md:mt-48",
-              "col-span-12 md:col-span-5 md:col-start-2",
-              "col-span-12 md:col-span-6 md:col-start-7",
-              "col-span-12 md:col-span-4 md:col-start-3 md:mt-24",
-            ];
-            return (
-              <figure key={p.name} className={layouts[i]}>
-                <a href="#" className="block group">
-                  <div className="overflow-hidden bg-foreground/5">
+        <section id="projects" className="space-y-24 md:space-y-32">
+          <div>
+            <div className="mb-10 md:mb-12">
+              <h2 className="text-2xl md:text-3xl tracking-tight">Featured Projects</h2>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
+              {projects.map((p, i) => (
+                <figure key={p.name}>
+                  <a href="#" className="block group">
+                    <div className="overflow-hidden bg-foreground/5 aspect-[4/5]">
+                      <img
+                        src={p.img}
+                        alt={`${p.name}, ${p.place}`}
+                        width={1024}
+                        height={1280}
+                        loading={i < 2 ? "eager" : "lazy"}
+                        className="w-full h-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-[1.02]"
+                      />
+                    </div>
+                    <figcaption className="mt-4 flex items-baseline justify-between gap-4 text-sm md:text-base">
+                      <span className="italic">{p.name}</span>
+                      <span className="text-foreground/60">{p.place}</span>
+                    </figcaption>
+                  </a>
+                </figure>
+              ))}
+            </div>
+          </div>
+
+          <div>
+            <div className="mb-10 md:mb-12">
+              <h2 className="text-2xl md:text-3xl tracking-tight">Visionary Interior Concepts</h2>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
+              {visionaryConcepts.map((concept, i) => (
+                <figure key={concept.img}>
+                  <div className="overflow-hidden bg-foreground/5 aspect-[4/5]">
                     <img
-                      src={p.img}
-                      alt={`${p.name}, ${p.place}`}
+                      src={concept.img}
+                      alt={concept.alt}
                       width={1024}
-                      height={1376}
-                      loading={i === 0 ? "eager" : "lazy"}
-                      className="w-full h-auto object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-[1.02]"
+                      height={1280}
+                      loading={i < 2 ? "eager" : "lazy"}
+                      className="w-full h-full object-cover transition-transform duration-[1200ms] ease-out hover:scale-[1.02]"
                     />
                   </div>
-                  <figcaption className="mt-4 flex items-baseline justify-between text-sm md:text-base">
-                    <span className="italic">{p.name}</span>
-                    <span className="text-foreground/60">{p.place}</span>
-                  </figcaption>
-                </a>
-              </figure>
-            );
-          })}
+                </figure>
+              ))}
+            </div>
+          </div>
         </section>
 
         <section id="studio" className="mt-48 md:mt-64 grid grid-cols-12 gap-x-6 md:gap-x-10">
