@@ -70,9 +70,12 @@ function Index() {
         <h1 className="sr-only">Atelier Blank — Interior Architecture Studio</h1>
 
         <section id="projects" className="space-y-24 md:space-y-32">
+          <div className="mb-4">
+            <h2 className="text-3xl md:text-5xl tracking-tight">Projects</h2>
+          </div>
           <div>
             <div className="mb-10 md:mb-12">
-              <h2 className="text-2xl md:text-3xl tracking-tight">Featured Projects</h2>
+              <h3 className="text-xl md:text-2xl tracking-tight text-foreground/70">Featured Projects</h3>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
               {projects.map((p, i) => (
@@ -100,7 +103,7 @@ function Index() {
 
           <div>
             <div className="mb-10 md:mb-12">
-              <h2 className="text-2xl md:text-3xl tracking-tight">Visionary Interior Concepts</h2>
+              <h3 className="text-xl md:text-2xl tracking-tight text-foreground/70">Visionary Interior Concepts</h3>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
               {visionaryConcepts.map((concept, i) => (
