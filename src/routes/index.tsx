@@ -29,14 +29,8 @@ function Index() {
           Atelier Blank
         </a>
         <nav className="flex gap-6 md:gap-10 text-sm tracking-tight">
-          <a href="#projects" className="hover:opacity-60 transition-opacity">
-            Projects
-          </a>
           <a href="#studio" className="hover:opacity-60 transition-opacity">
             Studio
-          </a>
-          <a href="#contact" className="hover:opacity-60 transition-opacity">
-            Contact
           </a>
         </nav>
       </header>
