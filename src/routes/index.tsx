@@ -29,11 +29,11 @@ function Index() {
           Atelier Blank
         </a>
         <nav className="flex gap-6 md:gap-10 text-sm tracking-tight">
-          <a href="#studio" className="hover:opacity-60 transition-opacity">
-            Studio
-          </a>
           <a href="/projects" className="hover:opacity-60 transition-opacity">
             Projects
+          </a>
+          <a href="#contact" className="hover:opacity-60 transition-opacity">
+            Contact
           </a>
         </nav>
       </header>
@@ -65,6 +65,46 @@ function Index() {
               From tailor made concept to holistic planning, from hospitality, to a single room to an
               office space.
             </p>
+          </div>
+        </section>
+
+        <section
+          id="contact"
+          className="mt-24 md:mt-40 px-6 md:px-10 grid grid-cols-12 gap-x-6 md:gap-x-10"
+        >
+          <div className="col-span-12 md:col-span-7 md:col-start-3">
+            <h2 className="text-sm tracking-tight text-foreground/50 mb-6">contact</h2>
+            <p className="text-2xl md:text-4xl leading-snug tracking-tight text-balance">
+              Let's Create Your Space
+            </p>
+            <div className="mt-10 space-y-6 text-base md:text-lg leading-relaxed text-foreground/80">
+              <div>
+                <p className="text-foreground">Ioanna Engrafou</p>
+                <p>Master of Interior Design</p>
+                <p>Università degli Studi Guglielmo Marconi</p>
+              </div>
+              <p>Hamburg, Germany · Limassol, Cyprus</p>
+              <div>
+                <p>
+                  <a href="tel:+491776690208" className="hover:opacity-60 transition-opacity">
+                    +49 177 669 0208
+                  </a>
+                </p>
+                <p>
+                  <a href="tel:+35799248800" className="hover:opacity-60 transition-opacity">
+                    +357 99 248800
+                  </a>
+                </p>
+              </div>
+              <p>
+                <a
+                  href="mailto:joanna-eng@hotmail.com"
+                  className="hover:opacity-60 transition-opacity"
+                >
+                  joanna-eng@hotmail.com
+                </a>
+              </p>
+            </div>
           </div>
         </section>
       </main>
