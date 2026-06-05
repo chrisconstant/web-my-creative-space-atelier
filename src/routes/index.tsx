@@ -1,14 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import kitchen from "@/assets/kitchen.png.asset.json";
-import bedroom from "@/assets/bedroom.png.asset.json";
 import living from "@/assets/living.png.asset.json";
-import library from "@/assets/library.png.asset.json";
-import lamp from "@/assets/lamp.png.asset.json";
-import websiteAd from "@/assets/Website_ad.png.asset.json";
-import websiteConcept from "@/assets/website.png.asset.json";
-import conceptWindow from "@/assets/ChatGPT_Image_May_29_2026_10_22_47_AM.png.asset.json";
-import conceptCafe from "@/assets/ChatGPT_Image_May_29_2026_09_42_19_AM.png.asset.json";
-import conceptCounter from "@/assets/ChatGPT_Image_May_29_2026_11_35_26_AM.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -29,22 +20,6 @@ export const Route = createFileRoute("/")({
   }),
   component: Index,
 });
-
-const projects = [
-  { img: living.url, name: "Wohnhaus Apartment", place: "Hamburg" },
-  { img: kitchen.url, name: "Cuisine Noire", place: "Blankenese" },
-  { img: library.url, name: "Salon Bibliothèque", place: "Hamburg" },
-  { img: bedroom.url, name: "Chambre Bronze", place: "Blankenese" },
-  { img: lamp.url, name: "Étude Lumière", place: "Hamburg" },
-];
-
-const visionaryConcepts = [
-  { img: websiteAd.url, alt: "Warm-toned interior showroom with sculptural staircase" },
-  { img: websiteConcept.url, alt: "Minimal café interior with curved stone counter" },
-  { img: conceptWindow.url, alt: "Street-facing café window framed in dark stone" },
-  { img: conceptCafe.url, alt: "Softly lit café interior with wood shelving and pendant lights" },
-  { img: conceptCounter.url, alt: "Refined café counter with illuminated ribbed detailing" },
-];
 
 function Index() {
   return (
