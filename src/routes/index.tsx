@@ -70,40 +70,45 @@ function Index() {
 
         <section
           id="contact"
-          className="mt-24 md:mt-40 px-6 md:px-10 grid grid-cols-12 gap-x-6 md:gap-x-10"
+          className="mt-20 md:mt-40 px-6 md:px-10 grid grid-cols-12 gap-x-6 md:gap-x-10"
         >
           <div className="col-span-12 md:col-span-7 md:col-start-3">
-            <h2 className="text-sm tracking-tight text-foreground/50 mb-6">contact</h2>
-            <p className="text-2xl md:text-4xl leading-snug tracking-tight text-balance">
+            <h2 className="text-xs md:text-sm tracking-tight text-foreground/50 mb-4 md:mb-6 uppercase">
+              contact
+            </h2>
+            <p className="text-2xl md:text-4xl lg:text-5xl leading-snug md:leading-tight tracking-tight text-balance">
               Let's Create Your Space
             </p>
-            <div className="mt-10 space-y-6 text-base md:text-lg leading-relaxed text-foreground/80">
-              <div>
-                <p className="text-foreground">Ioanna Engrafou</p>
+            <div className="mt-12 md:mt-16 grid grid-cols-1 sm:grid-cols-2 gap-10 md:gap-x-16">
+              <div className="space-y-1 text-sm md:text-base leading-relaxed text-foreground/70">
+                <p className="text-foreground font-medium text-base md:text-lg">Ioanna Engrafou</p>
                 <p>Master of Interior Design</p>
-                <p>Università degli Studi Guglielmo Marconi</p>
+                <p className="mt-2">Università degli Studi Guglielmo Marconi</p>
               </div>
-              <p>Hamburg, Germany · Limassol, Cyprus</p>
-              <div>
+              <div className="space-y-1 text-sm md:text-base leading-relaxed text-foreground/70">
+                <p>Hamburg, Germany</p>
+                <p>Limassol, Cyprus</p>
+              </div>
+              <div className="space-y-1 text-sm md:text-base leading-relaxed">
                 <p>
-                  <a href="tel:+491776690208" className="hover:opacity-60 transition-opacity">
+                  <a href="tel:+491776690208" className="hover:opacity-60 transition-opacity text-foreground/70">
                     +49 177 669 0208
                   </a>
                 </p>
                 <p>
-                  <a href="tel:+35799248800" className="hover:opacity-60 transition-opacity">
+                  <a href="tel:+35799248800" className="hover:opacity-60 transition-opacity text-foreground/70">
                     +357 99 248800
                   </a>
                 </p>
               </div>
-              <p>
+              <div className="text-sm md:text-base leading-relaxed">
                 <a
                   href="mailto:joanna-eng@hotmail.com"
-                  className="hover:opacity-60 transition-opacity"
+                  className="hover:opacity-60 transition-opacity text-foreground/70"
                 >
                   joanna-eng@hotmail.com
                 </a>
-              </p>
+              </div>
             </div>
           </div>
         </section>
