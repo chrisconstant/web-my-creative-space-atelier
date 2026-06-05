@@ -32,6 +32,9 @@ function Index() {
           <a href="#studio" className="hover:opacity-60 transition-opacity">
             Studio
           </a>
+          <a href="/projects" className="hover:opacity-60 transition-opacity">
+            Projects
+          </a>
         </nav>
       </header>
 
