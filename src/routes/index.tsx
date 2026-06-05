@@ -35,90 +35,32 @@ function Index() {
         </nav>
       </header>
 
-      <main className="pt-28 md:pt-32 px-6 md:px-10 pb-32">
+      <main className="pt-24 md:pt-28">
         <h1 className="sr-only">Atelier Blank — Interior Architecture Studio</h1>
 
-        <section id="projects" className="space-y-24 md:space-y-32">
-          <div className="mb-4">
-            <h2 className="text-3xl md:text-5xl tracking-tight">Projects</h2>
-          </div>
-          <div>
-            <div className="mb-10 md:mb-12">
-              <h3 className="text-xl md:text-2xl tracking-tight text-foreground/70">Featured Projects</h3>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
-              {projects.map((p, i) => (
-                <figure key={p.name}>
-                  <a href="#" className="block group">
-                    <div className="overflow-hidden bg-foreground/5 aspect-[4/5]">
-                      <img
-                        src={p.img}
-                        alt={`${p.name}, ${p.place}`}
-                        width={1024}
-                        height={1280}
-                        loading={i < 2 ? "eager" : "lazy"}
-                        className="w-full h-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-[1.02]"
-                      />
-                    </div>
-                    <figcaption className="mt-4 flex items-baseline justify-between gap-4 text-sm md:text-base">
-                      <span className="italic">{p.name}</span>
-                      <span className="text-foreground/60">{p.place}</span>
-                    </figcaption>
-                  </a>
-                </figure>
-              ))}
-            </div>
-          </div>
-
-          <div>
-            <div className="mb-10 md:mb-12">
-              <h3 className="text-xl md:text-2xl tracking-tight text-foreground/70">Visionary Interior Concepts</h3>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
-              {visionaryConcepts.map((concept, i) => (
-                <figure key={concept.img}>
-                  <div className="overflow-hidden bg-foreground/5 aspect-[4/5]">
-                    <img
-                      src={concept.img}
-                      alt={concept.alt}
-                      width={1024}
-                      height={1280}
-                      loading={i < 2 ? "eager" : "lazy"}
-                      className="w-full h-full object-cover transition-transform duration-[1200ms] ease-out hover:scale-[1.02]"
-                    />
-                  </div>
-                </figure>
-              ))}
-            </div>
+        <section className="px-6 md:px-10">
+          <div className="overflow-hidden bg-foreground/5">
+            <img
+              src={living.url}
+              alt="Wohnhaus Apartment, Hamburg"
+              width={1024}
+              height={1280}
+              loading="eager"
+              className="w-full h-auto object-cover"
+            />
           </div>
         </section>
 
-        <section id="studio" className="mt-48 md:mt-64 grid grid-cols-12 gap-x-6 md:gap-x-10">
-          <p className="col-span-12 md:col-span-7 md:col-start-3 text-2xl md:text-4xl leading-snug tracking-tight text-balance">
-            We are redefining spaces. Exceptional spaces begin with the art of good design. We
-            create bespoke interiors that elevate individuality.
-          </p>
-          <p className="col-span-12 md:col-span-7 md:col-start-3 text-2xl md:text-4xl leading-snug tracking-tight text-balance mt-8">
-            From tailor made concept to holistic planning, from hospitality, to a single room to an
-            office space.
-          </p>
-        </section>
-
-        <section
-          id="contact"
-          className="mt-40 md:mt-56 grid grid-cols-12 gap-x-6 md:gap-x-10 text-sm"
-        >
-          <div className="col-span-12 md:col-span-3 md:col-start-3">
-            <p className="text-foreground/50 mb-2">Studio</p>
-            <p>Blankenese, Hamburg</p>
-            <p>Limassol, Cyprus</p>
-          </div>
-          <div className="col-span-12 md:col-span-3 mt-8 md:mt-0">
-            <p className="text-foreground/50 mb-2">Contact</p>
-            <p>
-              studio@atelierblank.com
-              <br />
-              +46 8 000 00 00
+        <section id="studio" className="mt-24 md:mt-40 px-6 md:px-10 grid grid-cols-12 gap-x-6 md:gap-x-10">
+          <div className="col-span-12 md:col-span-7 md:col-start-3">
+            <h2 className="text-sm tracking-tight text-foreground/50 mb-6">what we do</h2>
+            <p className="text-2xl md:text-4xl leading-snug tracking-tight text-balance">
+              We are redefining spaces. Exceptional spaces begin with the art of good design. We
+              create bespoke interiors that elevate individuality.
+            </p>
+            <p className="text-2xl md:text-4xl leading-snug tracking-tight text-balance mt-8">
+              From tailor made concept to holistic planning, from hospitality, to a single room to an
+              office space.
             </p>
           </div>
         </section>
