@@ -4,6 +4,7 @@ import kitchen from "@/assets/kitchen.png.asset.json";
 import bedroom from "@/assets/bedroom.png.asset.json";
 import library from "@/assets/library.png.asset.json";
 import lamp from "@/assets/lamp.png.asset.json";
+import underConstructionLimassol from "@/assets/under-construction-limassol.png.asset.json";
 import websiteAd from "@/assets/Website_ad.png.asset.json";
 import websiteConcept from "@/assets/website.png.asset.json";
 import conceptWindow from "@/assets/ChatGPT_Image_May_29_2026_10_22_47_AM.png.asset.json";
@@ -31,12 +32,17 @@ export const Route = createFileRoute("/projects")({
 });
 
 const featured = [
+  {
+    src: underConstructionLimassol,
+    alt: "Under construction, Limassol",
+    caption: "Under construction, Limassol",
+  },
   { src: living, alt: "Wohnhaus Apartment" },
   { src: kitchen, alt: "Cuisine Noire" },
   { src: library, alt: "Salon Bibliothèque" },
   { src: bedroom, alt: "Chambre Bronze" },
   { src: lamp, alt: "Étude Lumière" },
-];
+] as { src: { url: string }; alt: string; caption?: string }[];
 
 const visionary = [
   { src: websiteAd, alt: "Concept — Atelier" },
@@ -70,13 +76,20 @@ function Projects() {
           <h3 className="text-sm tracking-tight text-foreground/70 mb-6">Featured Projects</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10">
             {featured.map((p, i) => (
-              <div key={p.alt} className="overflow-hidden bg-foreground/5 aspect-[4/5]">
-                <img
-                  src={p.src.url}
-                  alt={p.alt}
-                  loading={i < 2 ? "eager" : "lazy"}
-                  className="w-full h-full object-cover"
-                />
+              <div key={p.alt}>
+                <div className="overflow-hidden bg-foreground/5 aspect-[4/5]">
+                  <img
+                    src={p.src.url}
+                    alt={p.alt}
+                    loading={i < 2 ? "eager" : "lazy"}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                {p.caption && (
+                  <p className="mt-3 text-sm tracking-tight text-foreground/70">
+                    {p.caption}
+                  </p>
+                )}
               </div>
             ))}
           </div>
