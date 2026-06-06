@@ -86,7 +86,8 @@ function Index() {
                 <p className="mt-2">Università degli Studi Guglielmo Marconi</p>
               </div>
               <div className="space-y-1 text-sm md:text-base leading-relaxed text-foreground/70">
-                <p>Hamburg, Germany · Limassol, Cyprus</p>
+                <p>Hamburg, Blankenese</p>
+                <p>Limassol, Cyprus</p>
               </div>
               <div className="space-y-1 text-sm md:text-base leading-relaxed text-foreground/70">
                 <p>
