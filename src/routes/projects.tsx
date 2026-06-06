@@ -35,13 +35,13 @@ const featured = [
   {
     src: underConstructionLimassol,
     alt: "Under construction, Limassol",
-    caption: "Under construction, Limassol",
+    caption: "Penthouse, Blankenese Hamburg",
   },
-  { src: living, alt: "Wohnhaus Apartment" },
-  { src: kitchen, alt: "Cuisine Noire" },
-  { src: library, alt: "Salon Bibliothèque" },
-  { src: bedroom, alt: "Chambre Bronze" },
-  { src: lamp, alt: "Étude Lumière" },
+  { src: living, alt: "Wohnhaus Apartment", caption: "Penthouse, Blankenese Hamburg" },
+  { src: kitchen, alt: "Cuisine Noire", caption: "Penthouse, Blankenese Hamburg" },
+  { src: library, alt: "Salon Bibliothèque", caption: "Penthouse, Blankenese Hamburg" },
+  { src: bedroom, alt: "Chambre Bronze", caption: "Penthouse, Blankenese Hamburg" },
+  { src: lamp, alt: "Étude Lumière", caption: "Penthouse, Blankenese Hamburg" },
 ] as { src: { url: string }; alt: string; caption?: string }[];
 
 const visionary = [
