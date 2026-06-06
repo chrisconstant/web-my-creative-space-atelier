@@ -80,31 +80,31 @@ function Index() {
               Let's Create Your Space
             </p>
             <div className="mt-12 md:mt-16 grid grid-cols-1 sm:grid-cols-2 gap-10 md:gap-x-16">
-              <div className="space-y-1 text-sm md:text-base leading-relaxed text-foreground/70">
+              <div className="sm:col-span-2 space-y-1 text-sm md:text-base leading-relaxed text-foreground/70">
                 <p className="text-foreground font-medium text-base md:text-lg">Ioanna Engrafou</p>
                 <p>Master of Interior Design</p>
                 <p className="mt-2">Università degli Studi Guglielmo Marconi</p>
               </div>
               <div className="space-y-1 text-sm md:text-base leading-relaxed text-foreground/70">
-                <p>Hamburg, Germany</p>
-                <p>Limassol, Cyprus</p>
+                <p>Hamburg, Germany · Limassol, Cyprus</p>
               </div>
-              <div className="space-y-1 text-sm md:text-base leading-relaxed">
+              <div className="space-y-1 text-sm md:text-base leading-relaxed text-foreground/70">
                 <p>
-                  <a href="tel:+491776690208" className="hover:opacity-60 transition-opacity text-foreground/70">
+                  <a href="tel:+491776690208" className="hover:opacity-60 transition-opacity">
                     +49 177 669 0208
                   </a>
                 </p>
                 <p>
-                  <a href="tel:+35799248800" className="hover:opacity-60 transition-opacity text-foreground/70">
+                  <a href="tel:+35799248800" className="hover:opacity-60 transition-opacity">
                     +357 99 248800
                   </a>
                 </p>
               </div>
-              <div className="text-sm md:text-base leading-relaxed">
+              <div className="sm:col-span-2 text-sm md:text-base leading-relaxed text-foreground/70">
+                E-mail:{" "}
                 <a
                   href="mailto:joanna-eng@hotmail.com"
-                  className="hover:opacity-60 transition-opacity text-foreground/70"
+                  className="hover:opacity-60 transition-opacity"
                 >
                   joanna-eng@hotmail.com
                 </a>
