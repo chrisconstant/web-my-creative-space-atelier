@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import living from "@/assets/living.png.asset.json";
+import hero from "@/assets/ChatGPT_Image_May_29_2026_10_22_47_AM.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -42,10 +42,10 @@ function Index() {
         <h1 className="sr-only">Atelier Blank — Interior Architecture Studio</h1>
 
         <section className="px-6 md:px-10">
-          <div className="overflow-hidden bg-foreground/5">
+          <div className="mx-auto max-w-[66%] overflow-hidden bg-foreground/5">
             <img
-              src={living.url}
-              alt="Wohnhaus Apartment, Hamburg"
+              src={hero.url}
+              alt="Atelier Blank — storefront"
               width={1024}
               height={1280}
               loading="eager"
