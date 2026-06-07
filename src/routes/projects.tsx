@@ -7,6 +7,7 @@ import lamp from "@/assets/lamp.png.asset.json";
 import underConstructionLimassol from "@/assets/under-construction-limassol-2.png.asset.json";
 import kitchenLimassol from "@/assets/kitchen-limassol.png.asset.json";
 import websiteAd from "@/assets/Website_ad.png.asset.json";
+import visionary1 from "@/assets/final22.png.asset.json";
 import websiteConcept from "@/assets/website.png.asset.json";
 import conceptWindow from "@/assets/ChatGPT_Image_May_29_2026_10_22_47_AM.png.asset.json";
 import conceptCafe from "@/assets/ChatGPT_Image_May_29_2026_09_42_19_AM.png.asset.json";
@@ -51,7 +52,7 @@ const featured = [
 ] as { src: { url: string }; alt: string; caption?: string }[];
 
 const visionary = [
-  { src: websiteAd, alt: "Concept — Atelier" },
+  { src: visionary1, alt: "Concept — Atelier" },
   { src: websiteConcept, alt: "Concept — Studio" },
   { src: conceptWindow, alt: "Concept — Window" },
   { src: conceptCafe, alt: "Concept — Café" },
