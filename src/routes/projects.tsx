@@ -35,7 +35,7 @@ const featured = [
   {
     src: underConstructionLimassol,
     alt: "Under construction, Limassol",
-    caption: "Penthouse, Blankenese Hamburg",
+    caption: "Under construction, Limassol",
   },
   { src: living, alt: "Wohnhaus Apartment", caption: "Penthouse, Blankenese Hamburg" },
   { src: kitchen, alt: "Cuisine Noire", caption: "Penthouse, Blankenese Hamburg" },
