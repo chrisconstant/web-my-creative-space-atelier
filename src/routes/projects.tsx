@@ -46,8 +46,8 @@ const featured = [
   { src: living, alt: "Wohnhaus Apartment", caption: "Penthouse, Blankenese Hamburg" },
   { src: kitchen, alt: "Cuisine Noire", caption: "Penthouse, Blankenese Hamburg" },
   { src: library, alt: "Salon Bibliothèque", caption: "Penthouse, Blankenese Hamburg" },
-  { src: bedroom, alt: "Chambre Bronze", caption: "Penthouse, Blankenese Hamburg" },
-  { src: lamp, alt: "Étude Lumière", caption: "Penthouse, Blankenese Hamburg" },
+  { src: bedroom, alt: "Chambre Bronze", caption: "Hamburg" },
+  { src: lamp, alt: "Étude Lumière", caption: "Hamburg" },
 ] as { src: { url: string }; alt: string; caption?: string }[];
 
 const visionary = [
