@@ -4,13 +4,13 @@ import hero from "@/assets/ChatGPT_Image_May_29_2026_10_22_47_AM.png.asset.json"
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Atelier Blank — Interior Architecture" },
+      { title: "Atelier Blankenese — Interior Architecture" },
       {
         name: "description",
         content:
-          "Atelier Blank is an interior architecture studio designing retail, residential and hospitality spaces worldwide.",
+          "Atelier Blankenese is an interior architecture studio designing retail, residential and hospitality spaces worldwide.",
       },
-      { property: "og:title", content: "Atelier Blank — Interior Architecture" },
+      { property: "og:title", content: "Atelier Blankenese — Interior Architecture" },
       {
         property: "og:description",
         content:
@@ -26,7 +26,7 @@ function Index() {
     <div className="min-h-screen bg-background text-foreground font-serif">
       <header className="fixed top-0 left-0 right-0 z-50 flex items-start justify-between px-6 md:px-10 py-6">
         <a href="/" className="text-base md:text-lg tracking-tight font-medium">
-          Atelier Blank
+          Atelier Blankenese
         </a>
         <nav className="flex gap-6 md:gap-10 text-sm tracking-tight">
           <a href="/projects" className="hover:opacity-60 transition-opacity">
@@ -39,13 +39,13 @@ function Index() {
       </header>
 
       <main className="pt-24 md:pt-28">
-        <h1 className="sr-only">Atelier Blank — Interior Architecture Studio</h1>
+        <h1 className="sr-only">Atelier Blankenese — Interior Architecture Studio</h1>
 
         <section className="px-6 md:px-10">
           <div className="mx-auto max-w-[66%] overflow-hidden bg-foreground/5">
             <img
               src={hero.url}
-              alt="Atelier Blank — storefront"
+              alt="Atelier Blankenese — storefront"
               width={1024}
               height={1280}
               loading="eager"
@@ -116,7 +116,7 @@ function Index() {
       </main>
 
       <footer className="px-6 md:px-10 py-8 text-xs text-foreground/50 flex justify-between">
-        <span>© Atelier Blank</span>
+        <span>© Atelier Blankenese</span>
         <span>Blankenese — Hamburg — Limassol</span>
       </footer>
     </div>
