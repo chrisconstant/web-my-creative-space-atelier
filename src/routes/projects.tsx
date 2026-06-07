@@ -5,6 +5,7 @@ import bedroom from "@/assets/bedroom.png.asset.json";
 import library from "@/assets/library.png.asset.json";
 import lamp from "@/assets/lamp.png.asset.json";
 import underConstructionLimassol from "@/assets/under-construction-limassol-2.png.asset.json";
+import kitchenLimassol from "@/assets/kitchen-limassol.png.asset.json";
 import websiteAd from "@/assets/Website_ad.png.asset.json";
 import websiteConcept from "@/assets/website.png.asset.json";
 import conceptWindow from "@/assets/ChatGPT_Image_May_29_2026_10_22_47_AM.png.asset.json";
@@ -34,6 +35,11 @@ export const Route = createFileRoute("/projects")({
 const featured = [
   {
     src: underConstructionLimassol,
+    alt: "Under construction, Limassol",
+    caption: "Under construction, Limassol",
+  },
+  {
+    src: kitchenLimassol,
     alt: "Under construction, Limassol",
     caption: "Under construction, Limassol",
   },
