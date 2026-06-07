@@ -83,12 +83,12 @@ function Projects() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10">
             {featured.map((p, i) => (
               <div key={p.alt}>
-                <div className="overflow-hidden bg-foreground/5 aspect-[4/5]">
+                <div className="overflow-hidden bg-foreground/5">
                   <img
                     src={p.src.url}
                     alt={p.alt}
                     loading={i < 2 ? "eager" : "lazy"}
-                    className="w-full h-full object-cover"
+                    className="w-full h-auto object-contain"
                   />
                 </div>
                 {p.caption && (
@@ -107,12 +107,12 @@ function Projects() {
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10">
             {visionary.map((p) => (
-              <div key={p.alt} className="overflow-hidden bg-foreground/5 aspect-[4/5]">
+              <div key={p.alt} className="overflow-hidden bg-foreground/5">
                 <img
                   src={p.src.url}
                   alt={p.alt}
                   loading="lazy"
-                  className="w-full h-full object-cover"
+                  className="w-full h-auto object-contain"
                 />
               </div>
             ))}
