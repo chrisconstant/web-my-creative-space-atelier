@@ -16,17 +16,17 @@ import conceptCounter from "@/assets/ChatGPT_Image_May_29_2026_11_35_26_AM.png.a
 export const Route = createFileRoute("/projects")({
   head: () => ({
     meta: [
-      { title: "Projects — Atelier Blank" },
+      { title: "Projects — Atelier Blankenese" },
       {
         name: "description",
         content:
-          "Featured projects and visionary interior concepts by Atelier Blank.",
+          "Featured projects and visionary interior concepts by Atelier Blankenese.",
       },
-      { property: "og:title", content: "Projects — Atelier Blank" },
+      { property: "og:title", content: "Projects — Atelier Blankenese" },
       {
         property: "og:description",
         content:
-          "Featured projects and visionary interior concepts by Atelier Blank.",
+          "Featured projects and visionary interior concepts by Atelier Blankenese.",
       },
     ],
   }),
@@ -64,7 +64,7 @@ function Projects() {
     <div className="min-h-screen bg-background text-foreground font-serif">
       <header className="fixed top-0 left-0 right-0 z-50 flex items-start justify-between px-6 md:px-10 py-6 bg-background/80 backdrop-blur">
         <a href="/" className="text-base md:text-lg tracking-tight font-medium">
-          Atelier Blank
+          Atelier Blankenese
         </a>
         <nav className="flex gap-6 md:gap-10 text-sm tracking-tight">
           <a href="/#studio" className="hover:opacity-60 transition-opacity">
@@ -122,7 +122,7 @@ function Projects() {
       </main>
 
       <footer className="px-6 md:px-10 py-8 text-xs text-foreground/50 flex justify-between">
-        <span>© Atelier Blank</span>
+        <span>© Atelier Blankenese</span>
         <span>Blankenese — Hamburg — Limassol</span>
       </footer>
     </div>
