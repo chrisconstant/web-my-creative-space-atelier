@@ -1,41 +1,29 @@
 import { Link } from "react-router-dom";
-import living from "@/assets/living.png.asset.json";
-import kitchen from "@/assets/kitchen.png.asset.json";
-import bedroom from "@/assets/bedroom.png.asset.json";
-import library from "@/assets/library.png.asset.json";
-import lamp from "@/assets/lamp.png.asset.json";
-import underConstructionLimassol from "@/assets/under-construction-limassol-2.png.asset.json";
-import kitchenLimassol from "@/assets/kitchen-limassol.png.asset.json";
-import visionary1 from "@/assets/final22.png.asset.json";
-import websiteConcept from "@/assets/website.png.asset.json";
-import conceptWindow from "@/assets/ChatGPT_Image_May_29_2026_10_22_47_AM.png.asset.json";
-import conceptCafe from "@/assets/ChatGPT_Image_May_29_2026_09_42_19_AM.png.asset.json";
-import conceptCounter from "@/assets/ChatGPT_Image_May_29_2026_11_35_26_AM.png.asset.json";
 
 const featured = [
   {
-    src: underConstructionLimassol,
+    src: "/images/under-construction-limassol-2.png",
     alt: "Under construction, Limassol — exterior",
     caption: "Under construction, Limassol",
   },
   {
-    src: kitchenLimassol,
+    src: "/images/kitchen-limassol.png",
     alt: "Under construction, Limassol — kitchen",
     caption: "Under construction, Limassol",
   },
-  { src: living, alt: "Wohnhaus Apartment", caption: "Penthouse, Blankenese Hamburg" },
-  { src: kitchen, alt: "Cuisine Noire", caption: "Penthouse, Blankenese Hamburg" },
-  { src: library, alt: "Salon Bibliothèque", caption: "Penthouse, Blankenese Hamburg" },
-  { src: bedroom, alt: "Chambre Bronze", caption: "Hamburg" },
-  { src: lamp, alt: "Étude Lumière", caption: "Hamburg" },
-] as { src: { url: string }; alt: string; caption?: string }[];
+  { src: "/images/living.png", alt: "Wohnhaus Apartment", caption: "Penthouse, Blankenese Hamburg" },
+  { src: "/images/kitchen.png", alt: "Cuisine Noire", caption: "Penthouse, Blankenese Hamburg" },
+  { src: "/images/library.png", alt: "Salon Bibliothèque", caption: "Penthouse, Blankenese Hamburg" },
+  { src: "/images/bedroom.png", alt: "Chambre Bronze", caption: "Hamburg" },
+  { src: "/images/lamp.png", alt: "Étude Lumière", caption: "Hamburg" },
+];
 
 const visionary = [
-  { src: visionary1, alt: "Concept — Atelier" },
-  { src: websiteConcept, alt: "Concept — Studio" },
-  { src: conceptWindow, alt: "Concept — Window" },
-  { src: conceptCafe, alt: "Concept — Café" },
-  { src: conceptCounter, alt: "Concept — Counter" },
+  { src: "/images/final22.png", alt: "Concept — Atelier" },
+  { src: "/images/website.png", alt: "Concept — Studio" },
+  { src: "/images/ChatGPT_Image_May_29_2026_10_22_47_AM.png", alt: "Concept — Window" },
+  { src: "/images/ChatGPT_Image_May_29_2026_09_42_19_AM.png", alt: "Concept — Café" },
+  { src: "/images/ChatGPT_Image_May_29_2026_11_35_26_AM.png", alt: "Concept — Counter" },
 ];
 
 export default function Projects() {
@@ -65,7 +53,7 @@ export default function Projects() {
               <div key={p.alt}>
                 <div className="overflow-hidden bg-foreground/5">
                   <img
-                    src={p.src.url}
+                    src={p.src}
                     alt={p.alt}
                     loading={i < 2 ? "eager" : "lazy"}
                     className="w-full h-auto object-contain"
@@ -87,7 +75,7 @@ export default function Projects() {
             {visionary.map((p) => (
               <div key={p.alt} className="overflow-hidden bg-foreground/5">
                 <img
-                  src={p.src.url}
+                  src={p.src}
                   alt={p.alt}
                   loading="lazy"
                   className="w-full h-auto object-contain"

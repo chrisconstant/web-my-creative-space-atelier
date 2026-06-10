@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import hero from "@/assets/ChatGPT_Image_May_29_2026_10_22_47_AM.png.asset.json";
 
 export default function Home() {
   return (
@@ -24,7 +23,7 @@ export default function Home() {
         <section className="px-6 md:px-10">
           <div className="mx-auto max-w-[66%] overflow-hidden bg-foreground/5">
             <img
-              src={hero.url}
+              src="/images/ChatGPT_Image_May_29_2026_10_22_47_AM.png"
               alt="Atelier Blankenese — storefront"
               width={1024}
               height={1280}
