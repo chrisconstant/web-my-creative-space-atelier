@@ -1,21 +1,22 @@
 import { Link } from "react-router-dom";
 
 const featured = [
-  {
-    src: "/images/under-construction-limassol-2.png",
-    alt: "Under construction, Limassol — exterior",
-    caption: "Under construction, Limassol",
-  },
+  { src: "/images/living.png", alt: "Wohnhaus Apartment", caption: "Penthouse, Blankenese Hamburg" },
   {
     src: "/images/kitchen-limassol.png",
     alt: "Under construction, Limassol — kitchen",
     caption: "Under construction, Limassol",
   },
-  { src: "/images/living.png", alt: "Wohnhaus Apartment", caption: "Penthouse, Blankenese Hamburg" },
-  { src: "/images/kitchen.png", alt: "Cuisine Noire", caption: "Penthouse, Blankenese Hamburg" },
+  {
+    src: "/images/under-construction-limassol-2.png",
+    alt: "Under construction, Limassol — exterior",
+    caption: "Under construction, Limassol",
+  },
   { src: "/images/library.png", alt: "Salon Bibliothèque", caption: "Penthouse, Blankenese Hamburg" },
+  { src: "/images/kitchen.png", alt: "Cuisine Noire", caption: "Penthouse, Blankenese Hamburg" },
   { src: "/images/bedroom.png", alt: "Chambre Bronze", caption: "Hamburg" },
   { src: "/images/lamp.png", alt: "Étude Lumière", caption: "Hamburg" },
+  { src: "/images/bathroom.png", alt: "Salle de Bain", caption: "Hamburg" },
 ];
 
 const visionary = [
