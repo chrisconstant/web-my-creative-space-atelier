@@ -1,37 +1,17 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { Link } from "react-router-dom";
 import hero from "@/assets/ChatGPT_Image_May_29_2026_10_22_47_AM.png.asset.json";
 
-export const Route = createFileRoute("/")({
-  head: () => ({
-    meta: [
-      { title: "Atelier Blankenese — Interior Architecture" },
-      {
-        name: "description",
-        content:
-          "Atelier Blankenese is an interior architecture studio designing retail, residential and hospitality spaces worldwide.",
-      },
-      { property: "og:title", content: "Atelier Blankenese — Interior Architecture" },
-      {
-        property: "og:description",
-        content:
-          "Interior architecture studio designing retail, residential and hospitality spaces worldwide.",
-      },
-    ],
-  }),
-  component: Index,
-});
-
-function Index() {
+export default function Home() {
   return (
     <div className="min-h-screen bg-background text-foreground font-serif">
       <header className="fixed top-0 left-0 right-0 z-50 flex items-start justify-between px-6 md:px-10 py-6">
-        <a href="/" className="text-base md:text-lg tracking-tight font-medium">
+        <Link to="/" className="text-base md:text-lg tracking-tight font-medium">
           Atelier Blankenese
-        </a>
+        </Link>
         <nav className="flex gap-6 md:gap-10 text-sm tracking-tight">
-          <a href="/projects" className="hover:opacity-60 transition-opacity">
+          <Link to="/projects" className="hover:opacity-60 transition-opacity">
             Projects
-          </a>
+          </Link>
           <a href="#contact" className="hover:opacity-60 transition-opacity">
             Contact
           </a>

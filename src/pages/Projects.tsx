@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { Link } from "react-router-dom";
 import living from "@/assets/living.png.asset.json";
 import kitchen from "@/assets/kitchen.png.asset.json";
 import bedroom from "@/assets/bedroom.png.asset.json";
@@ -6,42 +6,21 @@ import library from "@/assets/library.png.asset.json";
 import lamp from "@/assets/lamp.png.asset.json";
 import underConstructionLimassol from "@/assets/under-construction-limassol-2.png.asset.json";
 import kitchenLimassol from "@/assets/kitchen-limassol.png.asset.json";
-import websiteAd from "@/assets/Website_ad.png.asset.json";
 import visionary1 from "@/assets/final22.png.asset.json";
 import websiteConcept from "@/assets/website.png.asset.json";
 import conceptWindow from "@/assets/ChatGPT_Image_May_29_2026_10_22_47_AM.png.asset.json";
 import conceptCafe from "@/assets/ChatGPT_Image_May_29_2026_09_42_19_AM.png.asset.json";
 import conceptCounter from "@/assets/ChatGPT_Image_May_29_2026_11_35_26_AM.png.asset.json";
 
-export const Route = createFileRoute("/projects")({
-  head: () => ({
-    meta: [
-      { title: "Projects — Atelier Blankenese" },
-      {
-        name: "description",
-        content:
-          "Featured projects and visionary interior concepts by Atelier Blankenese.",
-      },
-      { property: "og:title", content: "Projects — Atelier Blankenese" },
-      {
-        property: "og:description",
-        content:
-          "Featured projects and visionary interior concepts by Atelier Blankenese.",
-      },
-    ],
-  }),
-  component: Projects,
-});
-
 const featured = [
   {
     src: underConstructionLimassol,
-    alt: "Under construction, Limassol",
+    alt: "Under construction, Limassol — exterior",
     caption: "Under construction, Limassol",
   },
   {
     src: kitchenLimassol,
-    alt: "Under construction, Limassol",
+    alt: "Under construction, Limassol — kitchen",
     caption: "Under construction, Limassol",
   },
   { src: living, alt: "Wohnhaus Apartment", caption: "Penthouse, Blankenese Hamburg" },
@@ -59,20 +38,20 @@ const visionary = [
   { src: conceptCounter, alt: "Concept — Counter" },
 ];
 
-function Projects() {
+export default function Projects() {
   return (
     <div className="min-h-screen bg-background text-foreground font-serif">
       <header className="fixed top-0 left-0 right-0 z-50 flex items-start justify-between px-6 md:px-10 py-6 bg-background/80 backdrop-blur">
-        <a href="/" className="text-base md:text-lg tracking-tight font-medium">
+        <Link to="/" className="text-base md:text-lg tracking-tight font-medium">
           Atelier Blankenese
-        </a>
+        </Link>
         <nav className="flex gap-6 md:gap-10 text-sm tracking-tight">
           <a href="/#studio" className="hover:opacity-60 transition-opacity">
             Studio
           </a>
-          <a href="/projects" className="hover:opacity-60 transition-opacity">
+          <Link to="/projects" className="hover:opacity-60 transition-opacity">
             Projects
-          </a>
+          </Link>
         </nav>
       </header>
 
@@ -93,9 +72,7 @@ function Projects() {
                   />
                 </div>
                 {p.caption && (
-                  <p className="mt-3 text-sm tracking-tight text-foreground/70">
-                    {p.caption}
-                  </p>
+                  <p className="mt-3 text-sm tracking-tight text-foreground/70">{p.caption}</p>
                 )}
               </div>
             ))}
